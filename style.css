@@ -1,0 +1,35 @@
+*{box-sizing:border-box}
+:root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:#1d1d27;color:#f3f1f5}
+html,body{margin:0;min-width:320px;min-height:100%;background:#1d1d27}
+body{display:flex;justify-content:center}
+.tutorial{width:min(720px,100%);min-height:100vh;padding:26px 28px 18px;position:relative;display:flex;flex-direction:column;background:#1d1d27}
+h1{margin:0 0 16px;font-size:clamp(24px,4.1vw,34px);line-height:1.35;letter-spacing:-.035em;font-weight:500;color:#f2f0f5}
+h1 span{font-size:.8em}
+.top-demo{height:150px;display:grid;grid-template-columns:1.55fr .9fr;gap:7px;position:relative;margin-bottom:8px}
+.code-card,.scroll-preview,.css-card{border:1px solid #aaa7b5;border-radius:4px;background:#1d1d27;overflow:hidden}
+.html-card{padding:8px 9px}
+.window-dots{height:13px;display:flex;gap:5px;align-items:flex-start}
+.window-dots i{width:7px;height:7px;border-radius:50%;background:#ff5d56}
+.window-dots i:nth-child(2){background:#ffbd2e}.window-dots i:nth-child(3){background:#28c840}
+pre{margin:0;white-space:pre;overflow:auto;font:clamp(6px,.9vw,8px)/1.55 ui-monospace,SFMono-Regular,Menlo,monospace;color:#ded9e7}
+.html-card pre{padding-top:3px}
+.html-card b{color:#e88db5;font-weight:500}.html-card em{color:#a9d36e;font-style:normal}
+.scroll-preview{padding:7px 8px 6px;display:flex;flex-direction:column;min-height:0}
+.preview-title{font-size:7px;font-weight:700;color:#f1edf4;margin-bottom:5px}
+.preview-scroll{height:100%;overflow-y:auto;overflow-x:hidden;padding-right:5px;color:#9e9aab;font-size:6px;line-height:1.6;scrollbar-color:#00c6ff #242942;scrollbar-width:thin}
+.preview-scroll p{margin:0 0 8px}
+.preview-scroll::-webkit-scrollbar{width:1.2em}
+.preview-scroll::-webkit-scrollbar-track{background-color:#242942;margin-block:.25em;border-radius:.3em}
+.preview-scroll::-webkit-scrollbar-thumb{background-color:#00c6ff;border-radius:.3em;border:3px solid #242942}
+.css-card{height:330px;position:relative;padding:10px 9px;margin-top:0;overflow:hidden}
+.css-card pre{line-height:1.68}
+.selector{color:#82e5db}.prop{color:#8fe9dc}.value{color:#a4e5d6}.comment{color:#9a91a6}
+.browser-label{position:absolute;right:-5px;height:20px;display:flex;align-items:center;justify-content:center;padding:0 12px;border-radius:20px;font-size:8px;font-weight:800;letter-spacing:.02em;white-space:nowrap;box-shadow:0 2px 6px #0004}
+.firefox{top:45px;background:#ffd34e;color:#312713}
+.webkit{top:96px;background:#e8b5f5;color:#33253a}
+.follow{align-self:flex-end;margin:12px 4px 10px 0;color:#ff9aa9;font-size:13px;font-weight:800;font-style:italic;text-shadow:1px 1px #fff}
+.follow span{font-style:normal}
+footer{margin-top:auto;display:flex;align-items:center;justify-content:flex-end;gap:9px;padding:7px 0 0;color:#f1eff4;font-size:12px}
+.avatar{width:29px;height:29px;border:2px solid #78d4ff;border-radius:50%;display:grid;place-items:center;background:linear-gradient(140deg,#42c9ed,#174c8b);font-size:8px;font-weight:800;color:#fff}
+@media(max-width:560px){.tutorial{padding:22px 16px 15px}h1{font-size:27px}.top-demo{height:145px;grid-template-columns:1.45fr .85fr}.css-card{height:310px}.browser-label{font-size:7px;padding:0 9px}.webkit{top:92px}pre{font-size:6px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}

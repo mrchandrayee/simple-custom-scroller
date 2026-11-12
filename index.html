@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1d1d27">
+<title>Simple Custom Scroller</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="tutorial">
+  <h1>Simple Custom<br>Scroller <span>🌱</span></h1>
+
+  <section class="top-demo">
+    <article class="code-card html-card">
+      <div class="window-dots"><i></i><i></i><i></i></div>
+      <pre><code><b>&lt;div</b> class=<em>"container"</em><b>&gt;</b>
+  <b>&lt;div</b> class=<em>"sub-div"</em><b>&gt;</b>
+    <b>&lt;h2&gt;</b>Custom Scroller<b>&lt;/h2&gt;</b>
+    <b>&lt;p&gt;</b>
+      Some Content Here ...
+    <b>&lt;/p&gt;</b>
+  <b>&lt;/div&gt;</b>
+<b>&lt;/div&gt;</b></code></pre>
+    </article>
+
+    <article class="scroll-preview">
+      <div class="preview-title">Custom Scrollbar</div>
+      <div class="preview-scroll" tabindex="0" aria-label="Scrollable sample text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae magna sed neque commodo consequat. Praesent tincidunt, mauris vel aliquet vulputate, justo nibh posuere ipsum, non interdum lectus arcu sed erat.</p>
+        <p>Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.</p>
+        <p>Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper.</p>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis.</p>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="css-card">
+    <div class="window-dots"><i></i><i></i><i></i></div>
+    <pre><code><span class="selector">.sub-div</span> {
+  <span class="prop">max-height</span>: <span class="value">100vh</span>;
+  <span class="prop">overflow-y</span>: <span class="value">scroll</span>;
+  <span class="prop">scrollbar-color</span>: <span class="value">#00c6ff #242942</span>;
+  <span class="prop">overflow-x</span>: <span class="value">hidden</span>;
+}
+
+<span class="comment">/* For Firefox */</span>
+<span class="selector">.sub-div</span> {
+  <span class="prop">scrollbar-width</span>: <span class="value">thin</span>;
+}
+
+<span class="comment">/* For Chrome, Edge & Safari */</span>
+<span class="selector">::-webkit-scrollbar</span> {
+  <span class="prop">width</span>: <span class="value">1.2em</span>;
+  <span class="prop">overflow-x</span>: <span class="value">hidden</span>;
+}
+
+<span class="selector">::-webkit-scrollbar-track</span> {
+  <span class="prop">background-color</span>: <span class="value">#242942</span>;
+  <span class="prop">margin-block</span>: <span class="value">0.25em</span>;
+  <span class="prop">border-radius</span>: <span class="value">0.3em</span>;
+}
+
+<span class="selector">::-webkit-scrollbar-thumb</span> {
+  <span class="prop">background-color</span>: <span class="value">#00c6ff</span>;
+  <span class="prop">border-radius</span>: <span class="value">0.3em</span>;
+}</code></pre>
+    <div class="browser-label firefox">FOR FIREFOX</div>
+    <div class="browser-label webkit">:: WEBKIT-IS FOR CHROME</div>
+  </section>
+
+  <div class="follow">Follow for More <span>📍</span></div>
+  <footer><span class="avatar">CS</span><span>@coding.stella</span></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
